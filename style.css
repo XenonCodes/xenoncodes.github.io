@@ -1,719 +1,742 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .cont_container {
-    max-width: 940px;
-    margin: 0 auto;
+  max-width: 940px;
+  margin: 0 auto;
 }
 
-body{ 
-    font-family: sans-serif;
+body {
+  font-family: sans-serif;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков шапки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.top{
-    min-height: 768px;
-    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+.top {
+  min-height: 768px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8.84%, #EBF3FB), color-stop(31.12%, rgba(152, 195, 232, 0)));
+  background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
-.top .container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
-.top_menu{
-    margin-top: 42px;
-    display: flex;
-    justify-content: space-between;
+.top_menu {
+  margin-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.top_text{
-    margin-top: 115px;
-    flex-grow: 1;
-    background-image: url(img/top_illustration.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 45%;
-    padding-bottom: 80px;
+.top_text {
+  margin-top: 115px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-image: url(img/top_illustration.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 45%;
+  padding-bottom: 80px;
 }
 
-.top-heading{
-    width: 504px;
-    font-weight: 300;
-    font-size: 64px;
-    line-height: 74px;
-    letter-spacing: 0.04em;
-    color: #1F3F68;
+.top-heading {
+  width: 504px;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
 }
 
-.top_text .text{
-    width: 425px;
-    margin-top: 32px;
+.top_text .text {
+  width: 425px;
+  margin-top: 32px;
 }
 
-.top_buttom{
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #5A98D0;
-    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-    border-radius: 10px;
-    margin-top: 71px;
-    padding: 15px 50px;
-    text-decoration: none;
-    display: inline-block;
+.top_buttom {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background: #5A98D0;
+  -webkit-box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+          box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  margin-top: 71px;
+  padding: 15px 50px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.top_contacts{
-    background-image: url(img/top_contacts.png);
-    background-size: cover;
-    min-height: 250px;
-    display: flex;
-    margin: 54px 0px 57px;
+.top_contacts {
+  background-image: url(img/top_contacts.png);
+  background-size: cover;
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 54px 0px 57px;
 }
 
-.top_text_contacts{
-    width: 780px;
-    margin: 0px auto;
-    text-align: center;
+.top_text_contacts {
+  width: 780px;
+  margin: 0px auto;
+  text-align: center;
 }
 
-.top_text_contacts .text{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.04em; 
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 49px;
+.top_text_contacts .text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 49px;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков центра!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.what_we_do{
-padding: 64px 0px;
+.what_we_do {
+  padding: 64px 0px;
 }
 
-.card_block{
-    margin-top: 64px;
-    display: flex;
-    justify-content: space-between;
+.card_block {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.card_text{
-    width: 359px;
-    padding: 44px 32px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+.card_text {
+  width: 359px;
+  padding: 44px 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  -webkit-box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+          box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.card_img{
-    align-self: center;
-    margin-bottom: 51px;
+.card_img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 51px;
 }
 
-.card_link{
-    font-size: 14px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    color: #5A98D0;
-    text-decoration: none;
-    display: block;
-    margin-top: 30px;
+.card_link {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5A98D0;
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
 }
 
-.section{
-    margin-bottom: 112px;
+.section {
+  margin-bottom: 112px;
 }
 
-.section .text{
-    width: 70%;
-    margin: 32px auto 64px;
-    opacity: 1;
-    text-align: center;
+.section .text {
+  width: 70%;
+  margin: 32px auto 64px;
+  opacity: 1;
+  text-align: center;
 }
 
-.section_parent{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 32px;
+.section_parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
 }
 
-.section_item{
-    position: relative;
-    flex-grow: 1;
+.section_item {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.section_item_margin{
-    margin-right: 32px;
+.section_item_margin {
+  margin-right: 32px;
 }
 
-.section_img{
-    width: 100%;
+.section_img {
+  width: 100%;
 }
 
-.section_big_text{
-    font-size: 32px;
-    line-height: 46px;
-    text-align: right;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    position: absolute;
-    top: 64px;
-    right: 64px;
+.section_big_text {
+  font-size: 32px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  position: absolute;
+  top: 64px;
+  right: 64px;
 }
 
-.section_little_text{
-    font-size: 28px;
-    line-height: 46px;
-    text-align: left;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    position: absolute;
-    top: 32px;
-    left: 32px;
+.section_little_text {
+  font-size: 28px;
+  line-height: 46px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  position: absolute;
+  top: 32px;
+  left: 32px;
 }
 
-.WriteTo{
-    display: flex;
-    justify-content: space-between;
+.WriteTo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.main_text_contacts{
-    width: 300px;
+.main_text_contacts {
+  width: 300px;
 }
 
-.main_text_contacts img{
-    margin: 78px 0px 16px;
+.main_text_contacts img {
+  margin: 78px 0px 16px;
 }
 
-.main_text_contacts .mini-heading{
-    letter-spacing: 0.04em;
-    margin: 40px 0px 24px;
+.main_text_contacts .mini-heading {
+  letter-spacing: 0.04em;
+  margin: 40px 0px 24px;
 }
 
-.main_text_contacts .list li{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    color: #1F3F68;
-    opacity: 0.6;
-    margin-bottom: 16px;
+.main_text_contacts .list li {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  opacity: 0.6;
+  margin-bottom: 16px;
 }
 
 .icPhone li::before {
-    content: url(img/ic_phone_18px.svg);
-    margin-right: 18px;
+  content: url(img/ic_phone_18px.svg);
+  margin-right: 18px;
 }
 
-.icInternet img{
-    margin: 0px 18px 0px 0px;
+.icInternet img {
+  margin: 0px 18px 0px 0px;
 }
 
-.icEmail img{
-    margin: 0px 18px 0px 0px;
+.icEmail img {
+  margin: 0px 18px 0px 0px;
 }
 
-.link{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    color: #1F3F68;
-    text-decoration: none;
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+  text-decoration: none;
 }
 
-.main_form_send{
-    width: 540px;
-    padding: 56px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
+.main_form_send {
+  width: 540px;
+  padding: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  -webkit-box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+          box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
 }
 
-.main_form_send .mini-heading{
-    margin-bottom: 48px;
+.main_form_send .mini-heading {
+  margin-bottom: 48px;
 }
 
-.main_form_send p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    color: #1F3F68;
-    opacity: 0.8;
+.main_form_send p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  opacity: 0.8;
 }
 
-.main_map_block{
-    margin: 96px 0px 112px;
-    text-align: center;
+.main_map_block {
+  margin: 96px 0px 112px;
+  text-align: center;
 }
 
-.map{
-    width: 100%;
-    height: 480px;
+.map {
+  width: 100%;
+  height: 480px;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков подвала!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.footer{
-    background: #316099;
+.footer {
+  background: #316099;
 }
 
-.footer_top{
-    display: flex;
-    justify-content: space-between;
-    padding: 91px 0px 96px;
+.footer_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 91px 0px 96px;
 }
 
-.footer_top_text{
-    width: 495px; 
+.footer_top_text {
+  width: 495px;
 }
 
-.footer_top_text .heading{
-    width: 340px;
-    font-weight: normal;
-    color: #FFFFFF;
-    text-align: left;
+.footer_top_text .heading {
+  width: 340px;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: left;
 }
 
-.footer_top_text .text{
-    color: #FFFFFF;
-    margin-top: 32px;
+.footer_top_text .text {
+  color: #FFFFFF;
+  margin-top: 32px;
 }
 
-.footer_buttom_block{
-    align-self: center;
+.footer_buttom_block {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.footer_buttom{
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #5A98D0;
-    text-decoration: none;
-    padding: 15px 80px;
+.footer_buttom {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background: #5A98D0;
+  text-decoration: none;
+  padding: 15px 80px;
 }
 
-.hr{
-    opacity: 0.4;
-    border: 1px solid #FFFFFF;
+.hr {
+  opacity: 0.4;
+  border: 1px solid #FFFFFF;
 }
 
-.footer_bottom{
-    padding: 64px 0px;
+.footer_bottom {
+  padding: 64px 0px;
 }
 
-.footer_bottom_list_box{
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
+.footer_bottom_list_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
 }
 
-.footer_bottom_list{
-    flex-grow: 1;
-    flex-basis: 33.3333%;
-    display: flex;
-    margin-right: 32px;
+.footer_bottom_list {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 33.3333%;
+      flex-basis: 33.3333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 32px;
 }
 
-.footer_bottom_list:first-child::before{
-    content: 'A. ';
-    margin-right: 16px;
+.footer_bottom_list:first-child::before {
+  content: 'A. ';
+  margin-right: 16px;
 }
 
-.footer_bottom_list:nth-child(2)::before{
-    content: 'T. ';
-    margin-right: 16px;
+.footer_bottom_list:nth-child(2)::before {
+  content: 'T. ';
+  margin-right: 16px;
 }
 
-.footer_bottom_list:last-child::before{
-    content: 'E. ';
-    margin-right: 16px;
+.footer_bottom_list:last-child::before {
+  content: 'E. ';
+  margin-right: 16px;
 }
 
-
-.footer_bottom_rights .text{
-    margin-top: 64px;
-    color: #FFFFFF;
-    opacity: 0.4;
+.footer_bottom_rights .text {
+  margin-top: 64px;
+  color: #FFFFFF;
+  opacity: 0.4;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!Настройка классов для тегов!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.text{
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    opacity: 0.6;
-    color: #1F3F68;
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  color: #1F3F68;
 }
 
-.heading{
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 46px;
-    text-align: center;
-    letter-spacing: 0.05em;
+.heading {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
-.heading-contact{
-    font-weight: 500;
-    font-size: 44px;
-    line-height: 74px;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    margin-bottom: 16px;
-    margin-top: 50px;
+.heading-contact {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  margin-top: 50px;
 }
 
-.mini-heading{
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
-    letter-spacing: 0.05em;
-    margin-bottom: 14px;
+.mini-heading {
+  font-size: 20px;
+  line-height: 30px;
+  color: #1F3F68;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
 }
 
-.list{
-    list-style-type: none;
+.list {
+  list-style-type: none;
 }
 
-.input{
-    height: 72px;
-    width: 100%;
-    padding: 21px 36px;
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin: 8px 0px 32px;
-    opacity: 0.4;
+.input {
+  height: 72px;
+  width: 100%;
+  padding: 21px 36px;
+  border: 1px solid #356EAD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin: 8px 0px 32px;
+  opacity: 0.4;
 }
 
-.inputText{
-    height: 144px;
+.inputText {
+  height: 144px;
 }
 
-.button{
-    margin-top: 72px;
-    width: 100%;
-    height: 72px;
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
+.button {
+  margin-top: 72px;
+  width: 100%;
+  height: 72px;
+  background: #5A98D0;
+  -webkit-box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+          box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1024px) {
-    .container{
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков шапки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    .top_text{
-        background-position: right 167px;
-        padding-bottom: 170px;
-    }
-
-    .top_menu{
-        margin-top: 21px;
-    }
-
-    .top_contacts{
-        margin: 46px 0px 64px;
-    }
-
-    .top_text_contacts{
-        width: 520px;
-    }
-
-    .button{
-        margin-top: 48px;
-    }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков центра!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    .what_we_do{
-        padding: 64px 32px 127px;
-    }
-
-    .card_block{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card_text{
-        margin-bottom: 32px;
-    }
-
-    .WriteTo{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main_text_contacts img {
-        margin: 0px 0px 16px;
-    }
-
-    .icInternet img {
-        margin: 0px 18px 0px 0px;
-    }
-
-    .icEmail img {
-        margin: 0px 18px 0px 0px;
-    }
-
-    .main_form_send{
-        margin-top: 48px;
-        width: 520px;
-    }
-
-    .section{
-        margin-bottom: 109px;
-    }
-
-    .main_map_block{
-        margin: 64px 0px;
-    }
-
-    .map{
-        height: 392px;
-    }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков подвала!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-    .footer .container{
-        padding-left: 117px;
-        padding-right: 116px;
-    }
-
-    .footer_top{
-        padding: 47px 0px 64px;
-    }
-
-    .footer_top_text{
-        width: 336px;
-    }
-
-    .footer_buttom{
-        padding: 10px 22px;
-    }
-
-    .footer_bottom_list_box{
-        flex-direction: column;
-    }
-
-    .footer_bottom_list{
-        margin-bottom: 25px;
-    }
-
-    .footer_bottom_rights .text {
-        margin-top: 39px;
-    }
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков шапки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .top_text {
+    background-position: right 167px;
+    padding-bottom: 170px;
+  }
+  .top_menu {
+    margin-top: 21px;
+  }
+  .top_contacts {
+    margin: 46px 0px 64px;
+  }
+  .top_text_contacts {
+    width: 520px;
+  }
+  .button {
+    margin-top: 48px;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков центра!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .what_we_do {
+    padding: 64px 32px 127px;
+  }
+  .card_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card_text {
+    margin-bottom: 32px;
+  }
+  .WriteTo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_text_contacts img {
+    margin: 0px 0px 16px;
+  }
+  .icInternet img {
+    margin: 0px 18px 0px 0px;
+  }
+  .icEmail img {
+    margin: 0px 18px 0px 0px;
+  }
+  .main_form_send {
+    margin-top: 48px;
+    width: 520px;
+  }
+  .section {
+    margin-bottom: 109px;
+  }
+  .main_map_block {
+    margin: 64px 0px;
+  }
+  .map {
+    height: 392px;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков подвала!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .footer .container {
+    padding-left: 117px;
+    padding-right: 116px;
+  }
+  .footer_top {
+    padding: 47px 0px 64px;
+  }
+  .footer_top_text {
+    width: 336px;
+  }
+  .footer_buttom {
+    padding: 10px 22px;
+  }
+  .footer_bottom_list_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_bottom_list {
+    margin-bottom: 25px;
+  }
+  .footer_bottom_rights .text {
+    margin-top: 39px;
+  }
 }
 
 @media (max-width: 667px) {
-    .container {
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков шапки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    .top{
-        min-height: 376px;
-        padding-bottom: 41px;
-        box-sizing: border-box;
-    }
-
-    .top_contacts{
-        margin: 30px 0px 46px;
-    }
-
-    .top_menu{
-        margin-top: 21px;
-    }
-
-    .top_text{
-        margin-top: 36px;
-        width: 100%;
-        text-align: center;
-        background-image: none;
-        padding-bottom: 0px;
-    }
-
-    .top-heading{
-        width: 100%;
-        font-size: 32px;
-        line-height: 38px;
-    }
-
-    .top_text .text{
-        width: 100%;
-        margin-top: 12px;
-    }
-
-    .top_buttom{
-        font-size: 12px;
-        line-height: 26px;
-        margin-top: 32px;
-        padding: 0px 8px;
-    }
-
-    .top_text_contacts{
-        width: 341px;
-    }
-
-    .heading-contact{
-        margin-bottom: 32px;
-        font-size: 24px;
-        line-height: 28px;
-    }
-
-    .top_text_contacts .text{
-        font-size: 16px;
-        margin-bottom: 61px;
-    }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков центра!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    .what_we_do{
-        padding: 48px 18px 64px;
-    }
-
-    .heading{
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .card_block{
-        margin-top: 32px;
-    }
-
-    .card_text{
-        width: 100%;
-    }
-
-    .section{
-        margin-bottom: 82px;
-    }
-
-    .section .text{
-        width: 100%;
-    }
-
-    .section_big_text{
-        font-size: 16px;
-        line-height: 19px;
-        top: 16px;
-        right: 16px;
-    }
-
-    .section_little_text{
-        font-size: 16px;
-        line-height: 19px;
-        top: 26px;
-        left: 16px;
-    }
-
-    .section_parent{
-        flex-direction: column;
-        margin-top: 16px;
-
-    }
-
-    .section_item_margin{
-        margin: 0px 0px 16px;
-    }
-
-    .main_text_contacts .mini-heading{
-        margin-top: 32px;
-    }
-
-    .main_form_send{
-        width: 342px;
-        padding: 36px;
-    }
-
-    .main_form_send .mini-heading{
-        margin-bottom: 31px;
-        font-size: 16px;
-        letter-spacing: 0.04em;
-    }
-
-    .input{
-        height: 46px;
-        margin: 5px 0px 21px;
-        padding: 13px 22px;
-    }
-
-    .inputText{
-        height: 93px;
-    }
-
-    .button{
-        height: 46px;
-        margin-top: 25px;
-    }
-
-    .main_map_block{
-        margin: 32px 0px;
-    }
-
-    .map{
-        height: 349px;
-    }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков подвала!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-    .footer .container {
-        padding-left: 16px;
-        padding-right: 16px;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .footer_top{
-        padding: 18px 16px 41px;
-    }
-
-    .footer_top_text .heading {
-        text-align: center;
-        width: 100%;
-    }
-
-    .footer_top_text {
-        width: 100%;
-    }
-
-    .footer_buttom_block {
-        margin-top: 40px;
-    }
-
-    .footer_bottom {
-        padding: 32px 0px;
-    }
-
-    .footer_bottom_list{
-        margin-bottom: 17px;
-        text-align: left;
-    }
-
-    .footer_bottom_rights .text {
-        margin-top: 20px;
-    }
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков шапки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .top {
+    min-height: 376px;
+    padding-bottom: 41px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .top_contacts {
+    margin: 30px 0px 46px;
+  }
+  .top_menu {
+    margin-top: 21px;
+  }
+  .top_text {
+    margin-top: 36px;
+    width: 100%;
+    text-align: center;
+    background-image: none;
+    padding-bottom: 0px;
+  }
+  .top-heading {
+    width: 100%;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .top_text .text {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .top_buttom {
+    font-size: 12px;
+    line-height: 26px;
+    margin-top: 32px;
+    padding: 0px 8px;
+  }
+  .top_text_contacts {
+    width: 341px;
+  }
+  .heading-contact {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .top_text_contacts .text {
+    font-size: 16px;
+    margin-bottom: 61px;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков центра!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .what_we_do {
+    padding: 48px 18px 64px;
+  }
+  .heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .card_block {
+    margin-top: 32px;
+  }
+  .card_text {
+    width: 100%;
+  }
+  .section {
+    margin-bottom: 82px;
+  }
+  .section .text {
+    width: 100%;
+  }
+  .section_big_text {
+    font-size: 16px;
+    line-height: 19px;
+    top: 16px;
+    right: 16px;
+  }
+  .section_little_text {
+    font-size: 16px;
+    line-height: 19px;
+    top: 26px;
+    left: 16px;
+  }
+  .section_parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 16px;
+  }
+  .section_item_margin {
+    margin: 0px 0px 16px;
+  }
+  .main_text_contacts .mini-heading {
+    margin-top: 32px;
+  }
+  .main_form_send {
+    width: 342px;
+    padding: 36px;
+  }
+  .main_form_send .mini-heading {
+    margin-bottom: 31px;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .input {
+    height: 46px;
+    margin: 5px 0px 21px;
+    padding: 13px 22px;
+  }
+  .inputText {
+    height: 93px;
+  }
+  .button {
+    height: 46px;
+    margin-top: 25px;
+  }
+  .main_map_block {
+    margin: 32px 0px;
+  }
+  .map {
+    height: 349px;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков подвала!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .footer .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_top {
+    padding: 18px 16px 41px;
+  }
+  .footer_top_text .heading {
+    text-align: center;
+    width: 100%;
+  }
+  .footer_top_text {
+    width: 100%;
+  }
+  .footer_buttom_block {
+    margin-top: 40px;
+  }
+  .footer_bottom {
+    padding: 32px 0px;
+  }
+  .footer_bottom_list {
+    margin-bottom: 17px;
+    text-align: left;
+  }
+  .footer_bottom_rights .text {
+    margin-top: 20px;
+  }
 }
+/*# sourceMappingURL=style.css.map */
