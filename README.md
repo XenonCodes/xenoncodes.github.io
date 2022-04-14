@@ -1,3 +1,4 @@
 Проект лендинга.
 Стек htnl/css.
-Автор XenonCodes.
+Автор дизайна: unknown.
+Автор кода: XenonCodes
