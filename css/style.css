@@ -21,37 +21,25 @@ body {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Настройка блоков шапки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .top {
   min-height: 768px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(8.84%, #EBF3FB), color-stop(31.12%, rgba(152, 195, 232, 0)));
   background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
 .top .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
 .top_menu {
   margin-top: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .top_text {
   margin-top: 115px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  background-image: url(img/top_illustration.png);
+  flex-grow: 1;
+  background-image: url(../img/top_illustration.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 45%;
@@ -79,8 +67,7 @@ body {
   letter-spacing: 0.04em;
   color: #FFFFFF;
   background: #5A98D0;
-  -webkit-box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-          box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   border-radius: 10px;
   margin-top: 71px;
   padding: 15px 50px;
@@ -89,11 +76,9 @@ body {
 }
 
 .top_contacts {
-  background-image: url(img/top_contacts.png);
+  background-image: url(../img/top_contacts.png);
   background-size: cover;
   min-height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 54px 0px 57px;
 }
@@ -121,36 +106,23 @@ body {
 
 .card_block {
   margin-top: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .card_text {
   width: 359px;
   padding: 44px 32px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #FFFFFF;
-  -webkit-box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-          box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .card_img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-bottom: 51px;
 }
 
@@ -176,20 +148,14 @@ body {
 }
 
 .section_parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 32px;
 }
 
 .section_item {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .section_item_margin {
@@ -223,12 +189,8 @@ body {
 }
 
 .WriteTo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .main_text_contacts {
@@ -255,7 +217,7 @@ body {
 }
 
 .icPhone li::before {
-  content: url(img/ic_phone_18px.svg);
+  content: url(../img/ic_phone_18px.svg);
   margin-right: 18px;
 }
 
@@ -279,11 +241,9 @@ body {
 .main_form_send {
   width: 540px;
   padding: 56px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #FFFFFF;
-  -webkit-box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
-          box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
 }
 
@@ -317,12 +277,8 @@ body {
 }
 
 .footer_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 91px 0px 96px;
 }
 
@@ -343,9 +299,7 @@ body {
 }
 
 .footer_buttom_block {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .footer_buttom {
@@ -369,12 +323,8 @@ body {
 }
 
 .footer_bottom_list_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.05em;
@@ -382,13 +332,8 @@ body {
 }
 
 .footer_bottom_list {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 33.3333%;
-      flex-basis: 33.3333%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 1;
+  flex-basis: 33.3333%;
   display: flex;
   margin-right: 32px;
 }
@@ -458,8 +403,7 @@ body {
   width: 100%;
   padding: 21px 36px;
   border: 1px solid #356EAD;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 10px;
   margin: 8px 0px 32px;
   opacity: 0.4;
@@ -474,8 +418,7 @@ body {
   width: 100%;
   height: 72px;
   background: #5A98D0;
-  -webkit-box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-          box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -512,25 +455,15 @@ body {
     padding: 64px 32px 127px;
   }
   .card_block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .card_text {
     margin-bottom: 32px;
   }
   .WriteTo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .main_text_contacts img {
     margin: 0px 0px 16px;
@@ -569,10 +502,7 @@ body {
     padding: 10px 22px;
   }
   .footer_bottom_list_box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .footer_bottom_list {
     margin-bottom: 25px;
@@ -591,8 +521,7 @@ body {
   .top {
     min-height: 376px;
     padding-bottom: 41px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .top_contacts {
     margin: 30px 0px 46px;
@@ -667,10 +596,7 @@ body {
     left: 16px;
   }
   .section_parent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: 16px;
   }
   .section_item_margin {
@@ -711,10 +637,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .footer_top {
     padding: 18px 16px 41px;
