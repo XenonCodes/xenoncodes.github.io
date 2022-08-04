@@ -339,17 +339,17 @@ body {
 }
 
 .footer_bottom_list:first-child::before {
-  content: 'A. ';
+  content: "A. ";
   margin-right: 16px;
 }
 
 .footer_bottom_list:nth-child(2)::before {
-  content: 'T. ';
+  content: "T. ";
   margin-right: 16px;
 }
 
 .footer_bottom_list:last-child::before {
-  content: 'E. ';
+  content: "E. ";
   margin-right: 16px;
 }
 
@@ -511,7 +511,6 @@ body {
     margin-top: 39px;
   }
 }
-
 @media (max-width: 667px) {
   .container {
     padding-left: 18px;
@@ -662,5 +661,4 @@ body {
   .footer_bottom_rights .text {
     margin-top: 20px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
